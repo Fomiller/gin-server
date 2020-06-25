@@ -6,15 +6,13 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Hello World this is a template file</h1>
-  <h2>Written by:</h2>
+  <h1>This is a super secret webpage</h1>
   {{if .}}
-    <h3>{{.firstName}}</h3>
-    <h3>{{.lastName}}</h3>
+  <h2>Welcome to the Clubhouse</h2>
+  <h2>You entered the right password</h2>
+    {{.user}}
+    {{.secret.email}}
+    {{.secret.phone}}
   {{end}}
-
-  <h2>my templates</h2>
-  {{template "myHeader"}}
-  
 </body>
 </html>
